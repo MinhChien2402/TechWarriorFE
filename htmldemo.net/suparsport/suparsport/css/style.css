@@ -1061,9 +1061,9 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   margin-bottom: 27px;
   margin-top: 27px;
 }
-.header-area.stick .main-menu nav > ul > li > a {
+/* .header-area.stick .main-menu nav > ul > li > a {
   padding: 25px 20px;
-}
+} */
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .header-area.stick .main-menu nav > ul > li > a {
     padding: 25px 15px;
