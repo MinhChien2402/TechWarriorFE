@@ -7,26 +7,22 @@
     <title>Fixture - SuperSport</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
-    <!-- Fonts -->
     <link rel="stylesheet" href="css/montserrat.css" />
-    <!-- CSS -->
-    <!-- Bootstrap CSS
-	============================================ -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <!-- Icon Font CSS
-	============================================ -->
     <link rel="stylesheet" href="css/material-design-iconic-font.min.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css" />
-    <!-- Plugins CSS
-	============================================ -->
     <link rel="stylesheet" href="css/plugins.css" />
-    <!-- Style CSS
-	============================================ -->
     <link rel="stylesheet" href="css/style.css" />
-    <!-- Modernizer JS
-	============================================ -->
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
   </head>
 
@@ -65,7 +61,7 @@
                       </ul>
                     </li>
                     <li>
-                      <a href="merchandise.html">merchandise</a>
+                      <a href="merchandise.html">shop</a>
                       <ul>
                         <li>
                           <a href="product-details.html">product details</a>
@@ -98,91 +94,865 @@
       </div>
       <!-- Page Banner Area End -->
 
-      <!-- Fixtures Area Start -->
-      <div id="fixtures-area" class="fixtures-area section pb-120 pt-120">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-10 col-12 text-center mx-auto">
-              <!-- Fixtures Table -->
+    
+
+      <div id="accordion" class="p-20">
+        <h2 class="mx-auto text-center">Top 5 European Football Leagues</h2>
+        <div class="card" style="border-top: none;">
+          <div class="card-header mt-120" id="headingOne">
+            <h5 class="mb-0 list-style: none;">
+              <button
+                class="btn btn-link"
+                data-toggle="collapse"
+                data-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                <img
+                  src="img/Logo/R.png"
+                  style="width: 30px; height: 30px; margin-right: 10px"
+                  alt=""
+                />
+                Premier League
+              </button>
+            </h5>
+          </div>
+
+          <div
+            id="collapseOne"
+            class="collapse show"
+            aria-labelledby="headingOne"
+            data-parent="#accordion"
+          >
+            <div class="card-body">
               <div class="table-responsive fixtures-table">
                 <table class="table">
                   <tr>
                     <th>match</th>
                     <th>date</th>
                     <th>time</th>
-                    <th>venue</th>
+                    <th>stadium</th>
+                    <th>interested</th>
                   </tr>
                   <tr>
                     <td>Abahani VS Brothers</td>
                     <td>25 jun 2017</td>
                     <td>9.00 pm</td>
                     <td>Santiago Bernabéu Stadium</td>
+                    <td>
+                      <a href=""
+                        ><i class="fa fa-heart" aria-hidden="true"></i
+                      ></a>
+                    </td>
                   </tr>
                   <tr>
                     <td>Brothers VS Mohammedan</td>
                     <td>28 jun 2017</td>
                     <td>11.00 pm</td>
                     <td>Mohammedan Stadium</td>
+                    <td>
+                      <a href=""
+                        ><i class="fa fa-heart" aria-hidden="true"></i
+                      ></a>
+                    </td>
                   </tr>
                   <tr>
                     <td>Arambagh KS VS Mohammedan</td>
                     <td>29 jun 2017</td>
                     <td>2.00 am</td>
                     <td>San Siro Stadium</td>
+                    <td>
+                      <a href=""
+                        ><i class="fa fa-heart" aria-hidden="true"></i
+                      ></a>
+                    </td>
                   </tr>
                   <tr>
                     <td>Arambagh KS VS Abahani</td>
                     <td>02 july 2017</td>
                     <td>2.00 am</td>
                     <td>Allianz Arena</td>
+                    <td>
+                      <a href=""
+                        ><i class="fa fa-heart" aria-hidden="true"></i
+                      ></a>
+                    </td>
                   </tr>
                   <tr>
                     <td>Arambagh KS VS Abahani</td>
                     <td>05 july 2017</td>
                     <td>11.00 pm</td>
                     <td>Camp Nou</td>
+                    <td>
+                      <a href=""
+                        ><i class="fa fa-heart" aria-hidden="true"></i
+                      ></a>
+                    </td>
                   </tr>
                   <tr>
                     <td>Brothers VS Barselona</td>
                     <td>08 july 2017</td>
                     <td>12.00 pm</td>
                     <td>Santiago Bernabéu Stadium</td>
+                    <td>
+                      <a href=""
+                        ><i class="fa fa-heart" aria-hidden="true"></i
+                      ></a>
+                    </td>
                   </tr>
                   <tr>
                     <td>Abahani VS Brothers</td>
                     <td>25 jun 2017</td>
                     <td>9.00 pm</td>
                     <td>Santiago Bernabéu Stadium</td>
+                    <td>
+                      <a href=""
+                        ><i class="fa fa-heart" aria-hidden="true"></i
+                      ></a>
+                    </td>
                   </tr>
                   <tr>
                     <td>Brothers VS Mohammedan</td>
                     <td>28 jun 2017</td>
                     <td>11.00 pm</td>
                     <td>Mohammedan Stadium</td>
+                    <td>
+                      <a href=""
+                        ><i class="fa fa-heart" aria-hidden="true"></i
+                      ></a>
+                    </td>
                   </tr>
                   <tr>
                     <td>Arambagh KS VS Mohammedan</td>
                     <td>29 jun 2017</td>
                     <td>2.00 am</td>
                     <td>San Siro Stadium</td>
+                    <td>
+                      <a href=""
+                        ><i class="fa fa-heart" aria-hidden="true"></i
+                      ></a>
+                    </td>
                   </tr>
                   <tr>
                     <td>Arambagh KS VS Abahani</td>
                     <td>02 july 2017</td>
                     <td>2.00 am</td>
                     <td>Allianz Arena</td>
+                    <td>
+                      <a href=""
+                        ><i class="fa fa-heart" aria-hidden="true"></i
+                      ></a>
+                    </td>
                   </tr>
                   <tr>
                     <td>Arambagh KS VS Abahani</td>
                     <td>05 july 2017</td>
                     <td>11.00 pm</td>
                     <td>Camp Nou</td>
+                    <td>
+                      <a href=""
+                        ><i class="fa fa-heart" aria-hidden="true"></i
+                      ></a>
+                    </td>
                   </tr>
                   <tr>
                     <td>Brothers VS Arambagh KS</td>
                     <td>08 july 2017</td>
                     <td>12.00 pm</td>
                     <td>Santiago Bernabéu Stadium</td>
+                    <td>
+                      <a href=""
+                        ><i class="fa fa-heart" aria-hidden="true"></i
+                      ></a>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+              <button
+                class="btn btn-link collapsed"
+                data-toggle="collapse"
+                data-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                <img
+                  src="img/Logo/LaLiga_Santander.webp"
+                  style="width: 30px; height: 30px; margin-right: 10px"
+                  alt=""
+                />
+                Laliga Stander
+              </button>
+            </h5>
+          </div>
+          <div
+            id="collapseTwo"
+            class="collapse"
+            aria-labelledby="headingTwo"
+            data-parent="#accordion"
+          >
+            <div class="card-body">
+              <div class="table-responsive fixtures-table">
+                <table class="table">
+                  <tr>
+                    <th>match</th>
+                    <th>date</th>
+                    <th>time</th>
+                    <th>stadium</th>
+                    <th>interested</th>
+                  </tr>
+                  <tr>
+                    <td>Abahani VS Brothers</td>
+                    <td>25 jun 2017</td>
+                    <td>9.00 pm</td>
+                    <td>Santiago Bernabéu Stadium</td>
+                    <td>
+                      <a href=""
+                        ><i class="fa fa-heart" aria-hidden="true"></i
+                      ></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Brothers VS Mohammedan</td>
+                    <td>28 jun 2017</td>
+                    <td>11.00 pm</td>
+                    <td>Mohammedan Stadium</td>
+                    <td>
+                      <a href=""
+                        ><i class="fa fa-heart" aria-hidden="true"></i
+                      ></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Arambagh KS VS Mohammedan</td>
+                    <td>29 jun 2017</td>
+                    <td>2.00 am</td>
+                    <td>San Siro Stadium</td>
+                    <td>
+                      <a href=""
+                        ><i class="fa fa-heart" aria-hidden="true"></i
+                      ></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Arambagh KS VS Abahani</td>
+                    <td>02 july 2017</td>
+                    <td>2.00 am</td>
+                    <td>Allianz Arena</td>
+                    <td>
+                      <a href=""
+                        ><i class="fa fa-heart" aria-hidden="true"></i
+                      ></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Arambagh KS VS Abahani</td>
+                    <td>05 july 2017</td>
+                    <td>11.00 pm</td>
+                    <td>Camp Nou</td>
+                    <td>
+                      <a href=""
+                        ><i class="fa fa-heart" aria-hidden="true"></i
+                      ></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Brothers VS Barselona</td>
+                    <td>08 july 2017</td>
+                    <td>12.00 pm</td>
+                    <td>Santiago Bernabéu Stadium</td>
+                    <td>
+                      <a href=""
+                        ><i class="fa fa-heart" aria-hidden="true"></i
+                      ></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Abahani VS Brothers</td>
+                    <td>25 jun 2017</td>
+                    <td>9.00 pm</td>
+                    <td>Santiago Bernabéu Stadium</td>
+                    <td>
+                      <a href=""
+                        ><i class="fa fa-heart" aria-hidden="true"></i
+                      ></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Brothers VS Mohammedan</td>
+                    <td>28 jun 2017</td>
+                    <td>11.00 pm</td>
+                    <td>Mohammedan Stadium</td>
+                    <td>
+                      <a href=""
+                        ><i class="fa fa-heart" aria-hidden="true"></i
+                      ></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Arambagh KS VS Mohammedan</td>
+                    <td>29 jun 2017</td>
+                    <td>2.00 am</td>
+                    <td>San Siro Stadium</td>
+                    <td>
+                      <a href=""
+                        ><i class="fa fa-heart" aria-hidden="true"></i
+                      ></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Arambagh KS VS Abahani</td>
+                    <td>02 july 2017</td>
+                    <td>2.00 am</td>
+                    <td>Allianz Arena</td>
+                    <td>
+                      <a href=""
+                        ><i class="fa fa-heart" aria-hidden="true"></i
+                      ></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Arambagh KS VS Abahani</td>
+                    <td>05 july 2017</td>
+                    <td>11.00 pm</td>
+                    <td>Camp Nou</td>
+                    <td>
+                      <a href=""
+                        ><i class="fa fa-heart" aria-hidden="true"></i
+                      ></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Brothers VS Arambagh KS</td>
+                    <td>08 july 2017</td>
+                    <td>12.00 pm</td>
+                    <td>Santiago Bernabéu Stadium</td>
+                    <td>
+                      <a href=""
+                        ><i class="fa fa-heart" aria-hidden="true"></i
+                      ></a>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button
+                class="btn btn-link collapsed"
+                data-toggle="collapse"
+                data-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                <img
+                  src="img/Logo/OIP.jpg"
+                  style="width: 30px; height: 30px; margin-right: 10px"
+                  alt=""
+                />
+                Ligue 1
+              </button>
+            </h5>
+          </div>
+          <div
+            id="collapseThree"
+            class="collapse"
+            aria-labelledby="headingThree"
+            data-parent="#accordion"
+          >
+            <div class="card-body">
+              <div class="table-responsive fixtures-table">
+                <table class="table">
+                  <tr>
+                    <th>match</th>
+                    <th>date</th>
+                    <th>time</th>
+                    <th>stadium</th>
+                    <th>interested</th>
+                  </tr>
+                  <tr>
+                    <td>Abahani VS Brothers</td>
+                    <td>25 jun 2017</td>
+                    <td>9.00 pm</td>
+                    <td>Santiago Bernabéu Stadium</td>
+                    <td>
+                      <a href=""
+                        ><i class="fa fa-heart" aria-hidden="true"></i
+                      ></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Brothers VS Mohammedan</td>
+                    <td>28 jun 2017</td>
+                    <td>11.00 pm</td>
+                    <td>Mohammedan Stadium</td>
+                    <td>
+                      <a href=""
+                        ><i class="fa fa-heart" aria-hidden="true"></i
+                      ></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Arambagh KS VS Mohammedan</td>
+                    <td>29 jun 2017</td>
+                    <td>2.00 am</td>
+                    <td>San Siro Stadium</td>
+                    <td>
+                      <a href=""
+                        ><i class="fa fa-heart" aria-hidden="true"></i
+                      ></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Arambagh KS VS Abahani</td>
+                    <td>02 july 2017</td>
+                    <td>2.00 am</td>
+                    <td>Allianz Arena</td>
+                    <td>
+                      <a href=""
+                        ><i class="fa fa-heart" aria-hidden="true"></i
+                      ></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Arambagh KS VS Abahani</td>
+                    <td>05 july 2017</td>
+                    <td>11.00 pm</td>
+                    <td>Camp Nou</td>
+                    <td>
+                      <a href=""
+                        ><i class="fa fa-heart" aria-hidden="true"></i
+                      ></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Brothers VS Barselona</td>
+                    <td>08 july 2017</td>
+                    <td>12.00 pm</td>
+                    <td>Santiago Bernabéu Stadium</td>
+                    <td>
+                      <a href=""
+                        ><i class="fa fa-heart" aria-hidden="true"></i
+                      ></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Abahani VS Brothers</td>
+                    <td>25 jun 2017</td>
+                    <td>9.00 pm</td>
+                    <td>Santiago Bernabéu Stadium</td>
+                    <td>
+                      <a href=""
+                        ><i class="fa fa-heart" aria-hidden="true"></i
+                      ></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Brothers VS Mohammedan</td>
+                    <td>28 jun 2017</td>
+                    <td>11.00 pm</td>
+                    <td>Mohammedan Stadium</td>
+                    <td>
+                      <a href=""
+                        ><i class="fa fa-heart" aria-hidden="true"></i
+                      ></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Arambagh KS VS Mohammedan</td>
+                    <td>29 jun 2017</td>
+                    <td>2.00 am</td>
+                    <td>San Siro Stadium</td>
+                    <td>
+                      <a href=""
+                        ><i class="fa fa-heart" aria-hidden="true"></i
+                      ></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Arambagh KS VS Abahani</td>
+                    <td>02 july 2017</td>
+                    <td>2.00 am</td>
+                    <td>Allianz Arena</td>
+                    <td>
+                      <a href=""
+                        ><i class="fa fa-heart" aria-hidden="true"></i
+                      ></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Arambagh KS VS Abahani</td>
+                    <td>05 july 2017</td>
+                    <td>11.00 pm</td>
+                    <td>Camp Nou</td>
+                    <td>
+                      <a href=""
+                        ><i class="fa fa-heart" aria-hidden="true"></i
+                      ></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Brothers VS Arambagh KS</td>
+                    <td>08 july 2017</td>
+                    <td>12.00 pm</td>
+                    <td>Santiago Bernabéu Stadium</td>
+                    <td>
+                      <a href=""
+                        ><i class="fa fa-heart" aria-hidden="true"></i
+                      ></a>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingFour">
+            <h5 class="mb-0">
+              <button
+                class="btn btn-link collapsed"
+                data-toggle="collapse"
+                data-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseFour"
+              >
+                <img
+                  src="img/Logo/i.png"
+                  style="width: 30px; height: 30px; margin-right: 10px"
+                  alt=""
+                />
+                Serie A
+              </button>
+            </h5>
+          </div>
+          <div
+            id="collapseFour"
+            class="collapse"
+            aria-labelledby="headingFour"
+            data-parent="#accordion"
+          >
+            <div class="card-body">
+              <div class="table-responsive fixtures-table">
+                <table class="table">
+                  <tr>
+                    <th>match</th>
+                    <th>date</th>
+                    <th>time</th>
+                    <th>stadium</th>
+                    <th>interested</th>
+                  </tr>
+                  <tr>
+                    <td>Abahani VS Brothers</td>
+                    <td>25 jun 2017</td>
+                    <td>9.00 pm</td>
+                    <td>Santiago Bernabéu Stadium</td>
+                    <td>
+                      <a href=""
+                        ><i class="fa fa-heart" aria-hidden="true"></i
+                      ></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Brothers VS Mohammedan</td>
+                    <td>28 jun 2017</td>
+                    <td>11.00 pm</td>
+                    <td>Mohammedan Stadium</td>
+                    <td>
+                      <a href=""
+                        ><i class="fa fa-heart" aria-hidden="true"></i
+                      ></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Arambagh KS VS Mohammedan</td>
+                    <td>29 jun 2017</td>
+                    <td>2.00 am</td>
+                    <td>San Siro Stadium</td>
+                    <td>
+                      <a href=""
+                        ><i class="fa fa-heart" aria-hidden="true"></i
+                      ></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Arambagh KS VS Abahani</td>
+                    <td>02 july 2017</td>
+                    <td>2.00 am</td>
+                    <td>Allianz Arena</td>
+                    <td>
+                      <a href=""
+                        ><i class="fa fa-heart" aria-hidden="true"></i
+                      ></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Arambagh KS VS Abahani</td>
+                    <td>05 july 2017</td>
+                    <td>11.00 pm</td>
+                    <td>Camp Nou</td>
+                    <td>
+                      <a href=""
+                        ><i class="fa fa-heart" aria-hidden="true"></i
+                      ></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Brothers VS Barselona</td>
+                    <td>08 july 2017</td>
+                    <td>12.00 pm</td>
+                    <td>Santiago Bernabéu Stadium</td>
+                    <td>
+                      <a href=""
+                        ><i class="fa fa-heart" aria-hidden="true"></i
+                      ></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Abahani VS Brothers</td>
+                    <td>25 jun 2017</td>
+                    <td>9.00 pm</td>
+                    <td>Santiago Bernabéu Stadium</td>
+                    <td>
+                      <a href=""
+                        ><i class="fa fa-heart" aria-hidden="true"></i
+                      ></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Brothers VS Mohammedan</td>
+                    <td>28 jun 2017</td>
+                    <td>11.00 pm</td>
+                    <td>Mohammedan Stadium</td>
+                    <td>
+                      <a href=""
+                        ><i class="fa fa-heart" aria-hidden="true"></i
+                      ></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Arambagh KS VS Mohammedan</td>
+                    <td>29 jun 2017</td>
+                    <td>2.00 am</td>
+                    <td>San Siro Stadium</td>
+                    <td>
+                      <a href=""
+                        ><i class="fa fa-heart" aria-hidden="true"></i
+                      ></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Arambagh KS VS Abahani</td>
+                    <td>02 july 2017</td>
+                    <td>2.00 am</td>
+                    <td>Allianz Arena</td>
+                    <td>
+                      <a href=""
+                        ><i class="fa fa-heart" aria-hidden="true"></i
+                      ></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Arambagh KS VS Abahani</td>
+                    <td>05 july 2017</td>
+                    <td>11.00 pm</td>
+                    <td>Camp Nou</td>
+                    <td>
+                      <a href=""
+                        ><i class="fa fa-heart" aria-hidden="true"></i
+                      ></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Brothers VS Arambagh KS</td>
+                    <td>08 july 2017</td>
+                    <td>12.00 pm</td>
+                    <td>Santiago Bernabéu Stadium</td>
+                    <td>
+                      <a href=""
+                        ><i class="fa fa-heart" aria-hidden="true"></i
+                      ></a>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingFive">
+            <h5 class="mb-0">
+              <button
+                class="btn btn-link collapsed"
+                data-toggle="collapse"
+                data-target="#collapseFive"
+                aria-expanded="false"
+                aria-controls="collapseFive"
+              >
+                <img
+                  src="img/Logo/s.png"
+                  style="width: 30px; height: 30px; margin-right: 10px"
+                  alt=""
+                />
+                Bundesliga
+              </button>
+            </h5>
+          </div>
+          <div
+            id="collapseFive"
+            class="collapse"
+            aria-labelledby="headingFour"
+            data-parent="#accordion"
+          >
+            <div class="card-body">
+              <div class="table-responsive fixtures-table">
+                <table class="table">
+                  <tr>
+                    <th>match</th>
+                    <th>date</th>
+                    <th>time</th>
+                    <th>stadium</th>
+                    <th>interested</th>
+                  </tr>
+                  <tr>
+                    <td>Abahani VS Brothers</td>
+                    <td>25 jun 2017</td>
+                    <td>9.00 pm</td>
+                    <td>Santiago Bernabéu Stadium</td>
+                    <td>
+                      <a href=""
+                        ><i class="fa fa-heart" aria-hidden="true"></i
+                      ></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Brothers VS Mohammedan</td>
+                    <td>28 jun 2017</td>
+                    <td>11.00 pm</td>
+                    <td>Mohammedan Stadium</td>
+                    <td>
+                      <a href=""
+                        ><i class="fa fa-heart" aria-hidden="true"></i
+                      ></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Arambagh KS VS Mohammedan</td>
+                    <td>29 jun 2017</td>
+                    <td>2.00 am</td>
+                    <td>San Siro Stadium</td>
+                    <td>
+                      <a href=""
+                        ><i class="fa fa-heart" aria-hidden="true"></i
+                      ></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Arambagh KS VS Abahani</td>
+                    <td>02 july 2017</td>
+                    <td>2.00 am</td>
+                    <td>Allianz Arena</td>
+                    <td>
+                      <a href=""
+                        ><i class="fa fa-heart" aria-hidden="true"></i
+                      ></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Arambagh KS VS Abahani</td>
+                    <td>05 july 2017</td>
+                    <td>11.00 pm</td>
+                    <td>Camp Nou</td>
+                    <td>
+                      <a href=""
+                        ><i class="fa fa-heart" aria-hidden="true"></i
+                      ></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Brothers VS Barselona</td>
+                    <td>08 july 2017</td>
+                    <td>12.00 pm</td>
+                    <td>Santiago Bernabéu Stadium</td>
+                    <td>
+                      <a href=""
+                        ><i class="fa fa-heart" aria-hidden="true"></i
+                      ></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Abahani VS Brothers</td>
+                    <td>25 jun 2017</td>
+                    <td>9.00 pm</td>
+                    <td>Santiago Bernabéu Stadium</td>
+                    <td>
+                      <a href=""
+                        ><i class="fa fa-heart" aria-hidden="true"></i
+                      ></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Brothers VS Mohammedan</td>
+                    <td>28 jun 2017</td>
+                    <td>11.00 pm</td>
+                    <td>Mohammedan Stadium</td>
+                    <td>
+                      <a href=""
+                        ><i class="fa fa-heart" aria-hidden="true"></i
+                      ></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Arambagh KS VS Mohammedan</td>
+                    <td>29 jun 2017</td>
+                    <td>2.00 am</td>
+                    <td>San Siro Stadium</td>
+                    <td>
+                      <a href=""
+                        ><i class="fa fa-heart" aria-hidden="true"></i
+                      ></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Arambagh KS VS Abahani</td>
+                    <td>02 july 2017</td>
+                    <td>2.00 am</td>
+                    <td>Allianz Arena</td>
+                    <td>
+                      <a href=""
+                        ><i class="fa fa-heart" aria-hidden="true"></i
+                      ></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Arambagh KS VS Abahani</td>
+                    <td>05 july 2017</td>
+                    <td>11.00 pm</td>
+                    <td>Camp Nou</td>
+                    <td>
+                      <a href=""
+                        ><i class="fa fa-heart" aria-hidden="true"></i
+                      ></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Brothers VS Arambagh KS</td>
+                    <td>08 july 2017</td>
+                    <td>12.00 pm</td>
+                    <td>Santiago Bernabéu Stadium</td>
+                    <td>
+                      <a href=""
+                        ><i class="fa fa-heart" aria-hidden="true"></i
+                      ></a>
+                    </td>
                   </tr>
                 </table>
               </div>
@@ -190,35 +960,7 @@
           </div>
         </div>
       </div>
-      <!-- Fixtures Area End -->
-
-      <!-- Breaking News Area Start -->
-      <div class="breaking-news-area section overlay pb-40 pt-40">
-        <div class="container">
-          <div class="row">
-            <!-- Breaking News Wrapper -->
-            <div class="news-wrapper col-12">
-              <h4>Breaking News :</h4>
-              <!-- Breaking News Slider -->
-              <div class="bnews-slider">
-                <a href="#"
-                  >There are many variations of passages of Lorem Ipsum
-                  available, but the majority have suffered alteration.</a
-                >
-                <a href="#"
-                  >There are many variations of passages of Lorem Ipsum
-                  available.</a
-                >
-                <a href="#"
-                  >There are many variations of passages of Lorem Ipsum
-                  available, but the majority.</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Breaking News Area End -->
+     
 
       <!-- Footer Top Area Start -->
       <div class="footer-top-area section pb-70 pt-100">
