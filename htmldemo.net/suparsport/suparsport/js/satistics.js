@@ -90,27 +90,27 @@ const fetchNews = async (url, method, callback, data) => {
     console.log(response)
 };
 // http://api.techwarriors.click/api/Article/GetList?PageSize=10&CurrentPage=1
-const GetArticleOnSatistics = (data) => {
-    let parent = document.getElementById('news-satistics')
-    let html = data.slice(0,2).map((item, index) => {
-        return `
-            <div class="blog-item-satistics col-lg-8 col-md-6 col-12 mb-30 row">
-                <div class="content">
-                    <h3 class="title">
-                        <a href="#"
-                        >${item.title}</a
-                        >
-                    </h3>
-                    <p class="text-overflow">
-                        ${item.content}
-                    </p>
-                    <a href="#" class="read-more">READ MORE</a>
-                </div>
-            </div>
-        `
-    })
-    if (parent) {
-        parent.innerHTML = html.join('')
-    }
-}
-fetchNews(`http://api.techwarriors.click/api/Article/GetList?PageSize=10&CurrentPage=1`, 'GET', GetArticleOnSatistics)
+// const GetArticleOnSatistics = (data) => {
+//     let parent = document.getElementById('news-satistics')
+//     let html = data.slice(0,2).map((item, index) => {
+//         return `
+//             <div class="blog-item-satistics col-lg-8 col-md-6 col-12 mb-30 row">
+//                 <div class="content">
+//                     <h3 class="title">
+//                         <a href="#"
+//                         >${item.title}</a
+//                         >
+//                     </h3>
+//                     <p class="text-overflow">
+//                         ${item.content}
+//                     </p>
+//                     <a href="#" class="read-more">READ MORE</a>
+//                 </div>
+//             </div>
+//         `
+//     })
+//     if (parent) {
+//         parent.innerHTML = html.join('')
+//     }
+// }
+// fetchNews(`http://api.techwarriors.click/api/Article/GetList?PageSize=10&CurrentPage=1`, 'GET', GetArticleOnSatistics)
