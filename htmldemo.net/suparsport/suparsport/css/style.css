@@ -1,48 +1,4 @@
 @charset "UTF-8";
-/*-----------------------------------------------------------------------------------
-
-    Template Name: SuparSport - Soccer and Football Club HTML Template
-    Template URI: http://devitems.com/html/suparsport-preview/index.html
-    Description: SuparSport - Soccer and Football Club HTML Template
-    Author: Hastech
-    Author URI: http://devitems.com/
-    Version: 1.0
-
------------------------------------------------------------------------------------
-
-    CSS INDEX
-    ===================
-
-    1.    Theme Default CSS
-    2.    Header Area
-	3.    Hero Area
-	4.    About Area
-	5.    Result Area
-	6.    Next Match Area
-	7.    Staff Area
-	8.    Funfact Area
-	9.    Product Area
-	10.   Gallery Area
-	11.   Points Table Area
-	12.   Video Area
-	13.   Blog Area
-	14.   Fixtures Area
-	15.   Shop Area
-	16.   Product Details Area
-	17.   Cart Area
-	18.   Checkout Area
-	19.   Achievement Area
-	20.   Testimonial Area
-	21.   Contact Area
-	22.   Footer Area
-
------------------------------------------------------------------------------------*/
-/*----------------------------------------*/
-/*  1.  Theme default CSS
-/*----------------------------------------*/
-/*-- Font Family --*/
-/*@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');*/
-/*-- Common Style --*/
 html, body {
   height: 100%;
 }
@@ -1002,9 +958,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 .panel-group .accordion-collapse .accordion-body {
   padding: 5px 10px 5px 15px;
 }
-/*----------------------------------------*/
-/*  2.  Header Area
-/*----------------------------------------*/
 .header-area {
   position: absolute;
   left: 0;
@@ -1068,9 +1021,9 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   margin-bottom: 27px;
   margin-top: 27px;
 }
-.header-area.stick .main-menu nav > ul > li > a {
-  /* padding: 25px 20px; */
-}
+/* .header-area.stick .main-menu nav > ul > li > a {
+  padding: 25px 20px;
+} */
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .header-area.stick .main-menu nav > ul > li > a {
     padding: 25px 15px;
@@ -2196,6 +2149,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 .staff-item .image img {
   width: 100%;
 }
+
 .staff-item .content {
   background-color: #454545;
   overflow: hidden;

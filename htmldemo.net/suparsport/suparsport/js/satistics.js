@@ -77,13 +77,6 @@ selectYear.addEventListener('change', (e) => {
     // fetchData(club, selectedValue)
 })
 
-$(function() {
-    $('.pop').on('click', function() {
-        $('#imagemodal').modal('show');   
-    });		
-});
-
-
 const fetchNews = async (url, method, callback, data) => {
 
     let response = await fetch(url, 
