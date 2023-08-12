@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Club</title>
-  <link rel="shortcut icon" type="image/png" href="../assets/images/logos/favicon.png" />
-  <link rel="stylesheet" href="../assets/css/styles.min.css" />
+  <title>Add Player</title>
+  <link rel="shortcut icon" type="image/png" href="./assets/images/logos/favicon.png" />
+  <link rel="stylesheet" href="./assets/css/styles.min.css" />
 </head>
 
 <body>
@@ -19,7 +19,7 @@
       <div>
         <div class="brand-logo d-flex align-items-center justify-content-between">
           <a href="./index.html" class="text-nowrap logo-img">
-            <img src="../assets/images/logos/favicon.png" width="200" alt="">
+            <img src="./assets/images/logos/favicon.png" width="200" alt="">
           </a>
           <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
             <i class="ti ti-x fs-8"></i>
@@ -136,7 +136,7 @@
               <li class="nav-item dropdown">
                 <a class="nav-link nav-icon-hover" href="javascript:void(0)" id="drop2" data-bs-toggle="dropdown"
                   aria-expanded="false">
-                  <img src="../assets/images/profile/user-1.jpg" alt="" width="35" height="35" class="rounded-circle">
+                  <img src="./assets/images/profile/user-1.jpg" alt="" width="35" height="35" class="rounded-circle">
                 </a>
                 <div class="dropdown-menu dropdown-menu-end dropdown-menu-animate-up" aria-labelledby="drop2">
                   <div class="message-body">
@@ -164,45 +164,35 @@
       <div class="container-fluid">
         <div class="card">
           <div class="card-body">
-            <h5 class="card-title fw-semibold mb-4">
-              Clubs
-              <a href="./add-article.html" class="btn btn-outline-secondary float-end">Add club</a>
-            </h5>
+            <h5 class="card-title fw-semibold mb-4">Add player</h5>
             <!-- <p class="mb-0">This is a sample page </p> -->
-            <table class="table">
-              <thead>
-                <tr>
-                  <th scope="col">#</th>
-                  <th scope="col">Club Name</th>
-                  <th scope="col">Country</th>
-                  <th scope="col">Created Date</th>
-                  <th scope="col">Modife Date</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">1</th>
-                  <td>Name</td>
-                  <td>Country</td>
-                  <td>
-                    20:12:2030 10/10/2030
-                  </td>
-                  <td>
-                    20:12:2030 10/10/2030
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+            <form>
+              <div class="mb-3">
+                <label for="PlayerName" class="form-label">Player Name</label>
+                <input type="text" class="form-control" id="PlayerName">
+              </div>
+              <div class="mb-3">
+                <label for="BirthDay" class="form-label">Birth Day</label>
+                <input type="date" class="form-control" id="BirthDay">
+                <!-- <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea> -->
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="Achivements">Achivements</label>
+                <!-- <input type="file" class="form-control" id="image"> -->
+                <textarea name="" id="Achivements" cols="30" rows="10" class="form-control"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
-  <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="../assets/js/sidebarmenu.js"></script>
-  <script src="../assets/js/app.min.js"></script>
-  <script src="../assets/libs/simplebar/dist/simplebar.js"></script>
+  <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
+  <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/sidebarmenu.js"></script>
+  <script src="./assets/js/app.min.js"></script>
+  <script src="./assets/libs/simplebar/dist/simplebar.js"></script>
 </body>
 
 </html>

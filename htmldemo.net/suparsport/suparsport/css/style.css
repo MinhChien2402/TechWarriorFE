@@ -47,6 +47,13 @@ html, body {
   height: 100%;
 }
 
+.text-overflow {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
 body {
   line-height: 24px;
   font-size: 14px;
@@ -1062,7 +1069,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   margin-top: 27px;
 }
 .header-area.stick .main-menu nav > ul > li > a {
-  padding: 25px 20px;
+  /* padding: 25px 20px; */
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .header-area.stick .main-menu nav > ul > li > a {
@@ -2725,6 +2732,40 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 .blog-item .content .title a {
   color: #4d4d4d;
 }
+
+/* blog-item-satistics */
+.blog-item-satistics .content .title a {
+  color: whitesmoke;
+  line-height: 24px;
+}
+
+.blog-item-satistics .content .title a:hover {
+  color: #ffc61c;
+}
+.blog-item-satistics .content > p {
+  font-size: 14px;
+  font-family: Montserrat;
+  font-weight: 300;
+  color: #e1e1e1;
+  margin-bottom: 8px;
+  line-height: 22px;
+}
+.blog-item-satistics .content .read-more {
+  font-size: 12px;
+  font-family: Montserrat;
+  font-weight: 600;
+  color: #fbfbfb;
+  border-bottom: 1px solid #686868;
+  line-height: 11px;
+  padding-bottom: 4px;
+}
+.blog-item-satistics .content .read-more:hover {
+  color: #ffc61c;
+  border-color: #ffc61c;
+}
+/*  */
+
+
 .blog-item .content .title a:hover {
   color: #ffc61c;
 }
