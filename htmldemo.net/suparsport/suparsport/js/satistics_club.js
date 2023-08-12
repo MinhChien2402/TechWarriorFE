@@ -3,8 +3,12 @@ const url = new URL(currentURL);
 const searchParams = new URLSearchParams(url.search)
 const clubId = url.search.split('?id=')[1]
 console.log(clubId);
-
 let api = `https://localhost:7023/api/Match/matches/${clubId}`
+
+const handleMatchDetail = (id) => {
+    console.log(id);
+    window.location.href = './match_detail.html?id='+id
+}
 const fetchMatchByClub = async () => {
     const animate = document.getElementById("animate")
     animate.classList.remove('visually-hidden')
@@ -26,7 +30,7 @@ const render = (data) => {
     let html = data.map(item => {
         return (
             `
-                <div class="col-6 border py-4">
+                <div class="col-6 border py-4" onclick="handleMatchDetail(${item.id})">
                     <div class="row">
                     <div class="col-8 border-end">
                         <div class="row justify-content-center align-items-center my-2">

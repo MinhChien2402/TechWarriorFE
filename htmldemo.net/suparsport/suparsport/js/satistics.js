@@ -59,7 +59,7 @@ selectClub.addEventListener('change', (e) => {
     console.log(selectedValue)
     const competitionTitle = document.getElementById('competition-title')
     competitionTitle.innerText = selectedText + " " +yearTitle
-    // fetchData(selectedValue, year)
+    fetchData(selectedValue, year)
 })
 
 const selectYear = document.getElementById("select-club-year")
@@ -74,7 +74,7 @@ selectYear.addEventListener('change', (e) => {
     console.log(selectedValue)
     const competitionTitle = document.getElementById('competition-title')
     competitionTitle.innerText = clubTitle + " " + selectedText
-    // fetchData(club, selectedValue)
+    fetchData(club, selectedValue)
 })
 
 const fetchNews = async (url, method, callback, data) => {

@@ -87,26 +87,48 @@
       <div class="section pb-70 pt-100">
         <div class="container shadow">
             <div class="row p-2">
-                <div class="col-6 fs-6">Premire League <span></span> Jan 20, 22</div>
+                <div class="col-6 fs-6" id="competition-heading">Premire League</div>
                 <div class="col-6 fs-6 text-end">Full Time</div>
             </div>
             <div class="row mt-50">
                 <div class="col-4 text-center">
-                    <img src="https://ssl.gstatic.com/onebox/media/sports/logos/QOUce0WQBYqnkSmN6_TxGA_96x96.png" width="48" height="48" alt="">
-                    <span class="d-block mt-10 fs-6">Brentford</span>
+                    <img src="" id="image-home" width="48" height="48" alt="">
+                    <span class="d-block mt-10 fs-6" id="name-home">Team</span>
                 </div>
                 <div class="col-4 text-center d-flex align-items-center justify-content-between">
-                    <div class="fs-3">1</div>
+                    <div class="fs-3" id="score-home"></div>
                     <div class="fs-3">-</div>
-                    <div class="fs-3">3</div>
+                    <div class="fs-3" id="score-away"></div>
                 </div>
                 <div class="col-4 text-center">
-                    <img src="https://ssl.gstatic.com/onebox/media/sports/logos/QOUce0WQBYqnkSmN6_TxGA_96x96.png" width="48" height="48" alt="">
-                    <span class="d-block mt-10 fs-6">Brentford</span>
+                    <img src="" id="image-away" width="48" height="48" alt="">
+                    <span class="d-block mt-10 fs-6" id="name-away">Team</span>
                 </div>
             </div>
             <div class="border-bottom my-4"></div>
             <div class="row p-2">
+              <div class="col-12 text-center fs-5">Xác xuất thắng</div>
+              <div class="row col-12 mt-30">
+                <div class="col-4 text-center fs-6">
+                  <span class="d-block fw-bold" id="home-title">Team</span>
+                  <span class="d-block text-danger" id="percent-home">0%</span>
+                </div>
+                <div class="col-4 text-center fs-6">
+                  <span class="d-block fw-bold">Hòa</span>
+                  <span class="d-block" id="percent-draw">0%</span>
+                </div>
+                <div class="col-4 text-center fs-6">
+                  <span class="d-block fw-bold" id="away-title">Team</span>
+                  <span class="d-block text-warning" id="percent-away">0%</span>
+                </div>
+              </div>
+            </div>
+            <div class="progress">
+              <div class="progress-bar bg-danger" role="progressbar" id="role-home" style="width: 33%"></div>
+              <div class="progress-bar bg-secondary" role="progressbar" id="role-draw" style="width: 33%"></div>
+              <div class="progress-bar bg-warning" role="progressbar" id="role-away" style="width: 33%"></div>
+            </div>
+            <!-- <div class="row p-2">
                 <div class="col-4 text-center">
                     <div>Ivan Toney 85'</div>
                 </div>
@@ -190,7 +212,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
       </div>
 
@@ -285,5 +307,6 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdWLY_Y6FL7QGW5vcO3zajUEsrKfQPNzI"></script>
     <script src="js/map.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/match_detail.js"></script>
   </body>
 </html>
