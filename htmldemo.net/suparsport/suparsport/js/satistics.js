@@ -29,7 +29,7 @@ const fetchData = async (club, year) => {
                     <td class="col-3 border-end">
                         <span class="mx-2">${standing.position}</span>
                         <img src="${standing.team.crest}" alt="" width="24" height="24">
-                        <a href="" class="text-primary mx-2">${standing.team.name}</a>
+                        <a href="./satistics_club.html?id=${standing.team.id}" class="text-primary mx-2">${standing.team.name}</a>
                     </td>
                     <td class="text-end">${standing.playedGames}</td>
                     <td class="text-end">${standing.won}</td>
@@ -45,7 +45,7 @@ const fetchData = async (club, year) => {
     })
     newTBody.innerHTML = htmls.join('')
 }
-// fetchData('PL', 2023)
+fetchData('PL', 2023)
 
 const selectClub = document.getElementById("select-club-standing")
 selectClub.addEventListener('change', (e) => {
