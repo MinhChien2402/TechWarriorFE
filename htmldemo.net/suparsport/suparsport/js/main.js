@@ -240,7 +240,12 @@ $('[data-countdown]').each(function() {
     $this.html(event.strftime('<div class="cdown days"><span class="counting">%-D</span>Days</div><div class="cdown hours"><span class="counting">%-H</span>Hours</div><div class="cdown minutes"><span class="counting">%M</span>Minutes</div>'));
     });
 });
- 
+$(function() {
+  $('.pop').on('click', function() {
+      $('#imagemodal').modal('show');   
+  });		
+});
+
     
     
 })(jQuery);	
