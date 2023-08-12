@@ -11,6 +11,27 @@ body {
   -webkit-box-orient: vertical;
 }
 
+/* .shopping-cart {
+  position: relative;
+} */
+/* .z-index-4 {
+  z-index: 100;
+} */
+.shopping-cart {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 30px;
+  right: 0;
+  background: black;
+  flex-shrink: 1;
+  font-size: 12px;
+}
+
 body {
   line-height: 24px;
   font-size: 14px;
@@ -992,7 +1013,7 @@ textarea:-ms-input-placeholder {
   left: 0;
   right: 0;
   top: 0;
-  z-index: 9999;
+  z-index: 100;
   border-bottom: 1px solid #737373;
 }
 @media only screen and (max-width: 767px) {
