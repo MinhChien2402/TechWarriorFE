@@ -112,6 +112,22 @@
                 <span class="hide-menu">Add Club</span>
               </a>
             </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./category.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-mood-happy"></i>
+                </span>
+                <span class="hide-menu">Category</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./add-category.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-aperture"></i>
+                </span>
+                <span class="hide-menu">Add Category</span>
+              </a>
+            </li>
           </ul>
         </nav>
         <!-- End Sidebar navigation -->
@@ -175,21 +191,18 @@
                   <th scope="col">#</th>
                   <th scope="col">PLayer Name</th>
                   <th scope="col">Date of Birth</th>
-                  <th scope="col">Achivements</th>
+                  <th scope="col">Country Name</th>
                   <!-- <th scope="col">Video</th> -->
                   <th scope="col">Created Date</th>
-                  <th scope="col">Modife Date</th>
+                  <!-- <th scope="col">Modife Date</th> -->
                 </tr>
               </thead>
-              <tbody>
+              <tbody id="table-player-list">
                 <tr>
                   <th scope="row">1</th>
                   <td>PLayer Name</td>
                   <td>Date of Birth</td>
                   <td>Achivements</td>
-                  <td>
-                    20:12:2030 10/10/2030
-                  </td>
                   <td>
                     20:12:2030 10/10/2030
                   </td>
@@ -201,11 +214,52 @@
       </div>
     </div>
   </div>
+  <div class="modal fade" id="updated_player" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Update Article</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="form-update-player">
+            <div class="mb-3">
+              <label for="PlayerName" class="form-label">Player Name</label>
+              <input type="text" class="form-control" id="PlayerName">
+            </div>
+            <div class="mb-3">
+              <label for="BirthDay" class="form-label">Birth Day</label>
+              <input type="date" class="form-control" id="BirthDay">
+              <!-- <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea> -->
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="Achivements">Achivements</label>
+              <!-- <input type="file" class="form-control" id="image"> -->
+              <textarea name="" id="Achivements" cols="30" rows="10" class="form-control"></textarea>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="Country">Country</label>
+              <!-- <input type="file" class="form-control" id="image"> -->
+              <!-- <select name="" id="Achivements" cols="30" rows="10" class="form-control"></select> -->
+              <select class="form-select" aria-label="Default select example" id="Country">
+                <!-- <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option> -->
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary" id="btn-update-player">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
   <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <script src="./assets/js/sidebarmenu.js"></script>
   <script src="./assets/js/app.min.js"></script>
   <script src="./assets/libs/simplebar/dist/simplebar.js"></script>
+  <script src="./assets/js/player.js"></script>
 </body>
 
 </html>

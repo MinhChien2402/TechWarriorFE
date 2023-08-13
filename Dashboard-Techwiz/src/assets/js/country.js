@@ -1,11 +1,11 @@
 // const domain = 'http://api.techwarriors.click/'
 const domain = 'https://localhost:7288/'
 const routes = {
-    GetAll: 'api/player/GetList',
-    post: 'api/player/Insert',
-    put: 'api/player/Update',
-    patch: 'api/player/Delete',
-    getDetails: 'api/player/GetDetail',
+    GetAll: 'api/country/GetList',
+    post: 'api/country/Insert',
+    put: 'api/country/Update',
+    patch: 'api/country/Delete',
+    getDetails: 'api/country/GetDetail',
 }
 const fetchData = async (url, method, callback, data) => {
 
@@ -22,90 +22,95 @@ const fetchData = async (url, method, callback, data) => {
 
 const handleDelete = async (id) => {
     console.log(id);
-    let url = domain + routes.patch + '?PlayerID=' + id
-    const res = await fetch(url, {
+    let url = domain + routes.patch + '?CountryId=' + id
+    const response =  await fetch(url, {
         method: 'patch'
     })
-    console.log(res);
-    if(res.ok) {
+    if (response.ok) {
         window.location.reload()
     }
 }
 
 const handleUpdate = async (id) => {
     console.log(id);
-    let url = domain + routes.getDetails + '?PlayerId=' + id
+    let url = domain + routes.getDetails + '?ArticleID=' + id
     let response = await fetch(url, {method: 'get'})
                     .then(response => response.json())
     response = response.data
     console.log(response)
-    var modal = new bootstrap.Modal(document.getElementById('updated_player'), {
+    var modal = new bootstrap.Modal(document.getElementById('updated_article'), {
         keyboard: false
     })
     modal.show()
-    let formUpdate = document.getElementById('form-update-player')
-    let PlayerName = formUpdate.querySelector('#PlayerName')
-    let BirthDay = formUpdate.querySelector('#BirthDay')
-    // let image = formUpdate.querySelector('#image')
-    let Achivements = formUpdate.querySelector('#Achivements')
-    let Country = formUpdate.querySelector('#Country')
-    let options = Array.from(Country.options)
-    let optionToSelect = options.find(item => item.text === response[0].countryName);
-    optionToSelect.selected = true;
-    let button = formUpdate.querySelector('#btn-update-player')
-    PlayerName.value = response[0].playerName
-    Achivements.value = response[0].achievements
-    let oldBirthday = response[0].birthDay
+    let formUpdate = document.getElementById('form-update-article')
+    let title = formUpdate.querySelector('#title')
+    let content = formUpdate.querySelector('#content')
+    let image = formUpdate.querySelector('#image')
+    let button = formUpdate.querySelector('#btn-update-article')
+    title.value = response[0].title
+    content.value = response[0].content
     button.addEventListener('click', async (e) => {
         e.preventDefault()
-        let newName = PlayerName.value
-        let newBirth = BirthDay.value || oldBirthday
-        let newAchievements = Achivements.value
-        let newCountry = Country.value
+        let newTitle = title.value
+        let newContent = content.value
+        let urlImage = response[0].image
+        console.log(urlImage);
+        if (image.files[0]) {
+            let formImage = new FormData()
+            formImage.append('File', image.files[0], "IMAGE-TEST.JPG")
+            console.log(formImage);
+            let response = await fetch(`${domain}api/file/uploadfile`,
+                {
+                    method: 'POST',
+                    body: formImage
+                },
+            )
+            response = await response.json()
+            urlImage = response.object
+        }
+        console.log(urlImage);
+        console.log(newTitle);
         let updateData = {
-            PlayerId: id,
-            playerName: newName,
-            birthDay: newBirth,
-            achievements: newAchievements,
-            countryID: newCountry,
-            Description: 'desc'
+            ArticleId: id,
+            Title: newTitle,
+            Content: newContent,
+            Description: 'desc',
+            Image: urlImage
         }
         let up = domain + routes.put
         console.log(JSON.stringify(updateData));
-        const res = await fetch(up, 
+        await fetch(up, 
             {
                 method: 'PUT', 
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify(updateData)
             })
-        console.log(res);
-        if (res.ok) {
-            modal.hide()
-            window.location.reload()
-        }
+        modal.hide()
+        window.location.reload()
     })
 }
 
 const GetListArticle = (data) => {
-    let table = document.getElementById('table-player-list')
+    let table = document.getElementById('table-country-list')
     let html = data.map((item, index) => {
         return `
             <tr>
                 <th scope="row">${index + 1}</th>
-                <td>${item.playerName}</td>
-                <td>${validateDatetime(item.birthDay)}</td>
                 <td>${item.countryName}</td>
                 <td>
                     ${validateDatetime(item.createDate)}
                 </td>
                 <td>
+                    ${item.description}
+                </td>
+                <td>
                     <button type="button" class="btn btn-warning"
-                        onclick="handleDelete('${item.playerID}')"
+                        onclick="handleDelete('${item.countryID}')"
                     >
                         <i class="ti ti-trash"></i>
                     </button>
                     <button type="button" class="btn btn-primary"
-                        onclick="handleUpdate('${item.playerID}')"
+                        onclick="handleUpdate('${item.countryID}')"
                     >
                         <i class="ti ti-settings"></i>
                     </button>
@@ -125,15 +130,6 @@ const GetListArticle = (data) => {
     }
 }
 
-const GetListSelect = (data) => {
-    const select = document.getElementById('Country')
-    let html = data.map(item => {
-        return (
-            `<option value="${item.countryID}">${item.countryName}</option>`
-        )
-    })
-    select.innerHTML = html.join('')
-}
 
 const validateDatetime = (datetimeString) => {
     // Kiểm tra định dạng ngày và giờ (datetime) hợp lệ
@@ -162,8 +158,8 @@ const validateDatetime = (datetimeString) => {
     var year = datetime.getFullYear();
   
     // Định dạng lại chuỗi ngày và giờ
-    // var formattedDatetime = `${padZero(month)}:${padZero(hours)} / ${padZero(day)}-${padZero(month)}-${year}`;
-    var formattedDatetime = `${year}-${padZero(month)}-${padZero(day)}`
+    var formattedDatetime = `${padZero(month)}:${padZero(hours)} / ${padZero(day)}-${padZero(month)}-${year}`;
+  
     // Trả về định dạng đã định kỳ
     return formattedDatetime;
 }
@@ -174,34 +170,27 @@ const padZero = (number) => {
 // http://api.techwarriors.click/api/Article/GetList?PageSize=10&CurrentPage=1
 fetchData(`${domain + routes.GetAll}?PageSize=10&CurrentPage=1`, 'GET', GetListArticle)
 
-fetchData(`${domain}api/country/getlist?PageSize=100&CurrentPage=1`, 'GET', GetListSelect)
-
-const form = document.querySelector('#form-add-player')
+const form = document.querySelector('#form-add-country')
 
 form?.addEventListener('submit', (e) => handleSubmit(e))
 
 const handleSubmit = async (e) => {
     e.preventDefault()
-    const name = form.querySelector('#PlayerName').value
-    const birthDay = form.querySelector('#BirthDay').value
-    const achievements = form.querySelector('#Achivements').value
-    const country = form.querySelector('#Country').value
-    console.log(name, birthDay, achievements, country);
+    let name = form.querySelector('#CountryName').value
+    let des = form.querySelector('#description').value
+    console.log(des);
     let data = JSON.stringify({
-        playerName: name,
-        birthDay: birthDay,
-        countryID: country,
-        description: 'desc',
-        achievements: achievements
+        countryName: name,
+        description: des,
     })
-    const response = await fetch(domain + routes.post, 
+    response = await fetch(domain + routes.post, 
         {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: data
         })
-    console.log(response);
     if (response.ok) {
-        window.location.replace('./player.html')
+        window.location.replace('./country.html')
     }
+    console.log(response)
 }

@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Aptech dashboard</title>
+  <title>Add Category</title>
   <link rel="shortcut icon" type="image/png" href="./assets/images/logos/favicon.png" />
   <link rel="stylesheet" href="./assets/css/styles.min.css" />
 </head>
@@ -113,21 +113,21 @@
               </a>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="./category.html" aria-expanded="false">
-                <span>
-                  <i class="ti ti-mood-happy"></i>
-                </span>
-                <span class="hide-menu">Category</span>
-              </a>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="./add-category.html" aria-expanded="false">
-                <span>
-                  <i class="ti ti-aperture"></i>
-                </span>
-                <span class="hide-menu">Add Category</span>
-              </a>
-            </li>
+                <a class="sidebar-link" href="./category.html" aria-expanded="false">
+                  <span>
+                    <i class="ti ti-mood-happy"></i>
+                  </span>
+                  <span class="hide-menu">Category</span>
+                </a>
+              </li>
+              <li class="sidebar-item">
+                <a class="sidebar-link" href="./add-category.html" aria-expanded="false">
+                  <span>
+                    <i class="ti ti-aperture"></i>
+                  </span>
+                  <span class="hide-menu">Add Category</span>
+                </a>
+              </li>
           </ul>
         </nav>
         <!-- End Sidebar navigation -->
@@ -178,7 +178,28 @@
       </header>
       <!--  Header End -->
       <div class="container-fluid">
-        <!--  Row 1 -->
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title fw-semibold mb-4">Add category</h5>
+            <!-- <p class="mb-0">This is a sample page </p> -->
+            <form id="form-add-club">
+              <div class="mb-3">
+                <label for="CategoryName" class="form-label">Category Name</label>
+                <input type="text" class="form-control" id="CategoryName">
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="CategoryParent">Category Parent</label>
+                <select id="CategoryParent" class="form-select" aria-label="Default select example">
+                  <option selected>Open this select menu</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -186,10 +207,8 @@
   <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <script src="./assets/js/sidebarmenu.js"></script>
   <script src="./assets/js/app.min.js"></script>
-  <script src="./assets/libs/apexcharts/dist/apexcharts.min.js"></script>
   <script src="./assets/libs/simplebar/dist/simplebar.js"></script>
-  <script src="./assets/js/dashboard.js"></script>
-  <!-- <script src="./assets/js/data.js"></script> -->
+  <script src="./assets/js/category.js"></script>
 </body>
 
 </html>

@@ -112,6 +112,22 @@
                 <span class="hide-menu">Add Club</span>
               </a>
             </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./category.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-mood-happy"></i>
+                </span>
+                <span class="hide-menu">Category</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./add-category.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-aperture"></i>
+                </span>
+                <span class="hide-menu">Add Category</span>
+              </a>
+            </li>
           </ul>
         </nav>
         <!-- End Sidebar navigation -->
@@ -166,7 +182,7 @@
           <div class="card-body">
             <h5 class="card-title fw-semibold mb-4">Add player</h5>
             <!-- <p class="mb-0">This is a sample page </p> -->
-            <form>
+            <form id="form-add-player">
               <div class="mb-3">
                 <label for="PlayerName" class="form-label">Player Name</label>
                 <input type="text" class="form-control" id="PlayerName">
@@ -181,6 +197,17 @@
                 <!-- <input type="file" class="form-control" id="image"> -->
                 <textarea name="" id="Achivements" cols="30" rows="10" class="form-control"></textarea>
               </div>
+              <div class="mb-3">
+                <label class="form-label" for="Country">Country</label>
+                <!-- <input type="file" class="form-control" id="image"> -->
+                <!-- <select name="" id="Achivements" cols="30" rows="10" class="form-control"></select> -->
+                <select class="form-select" aria-label="Default select example" id="Country">
+                  <!-- <option selected>Open this select menu</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option> -->
+                </select>
+              </div>
               <button type="submit" class="btn btn-primary">Submit</button>
             </form>
           </div>
@@ -193,6 +220,7 @@
   <script src="./assets/js/sidebarmenu.js"></script>
   <script src="./assets/js/app.min.js"></script>
   <script src="./assets/libs/simplebar/dist/simplebar.js"></script>
+  <script src="./assets/js/player.js"></script>
 </body>
 
 </html>
